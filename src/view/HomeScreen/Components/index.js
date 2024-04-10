@@ -1,4 +1,5 @@
 import { View } from 'react-native';
+
 import styles from './style';
 import CarteiraSaldos from './CarteiraSaldos';
 import ButtonAdicionarDinheiro from './Buttons/ButtonAdicionarDinheiro';
@@ -6,9 +7,9 @@ import ButtonSaidas from './Buttons/ButtonSaidas';
 import ButtonRelatorios from './Buttons/ButtonsRelatorios';
 import ButtonSugestaoInvestimentos from './Buttons/ButtonSugestaoInvestimentos';
 
-export default function Functionalities(){
+export default function Components(){
     return(
-        <View style={styles.boxFunctionalities}>
+        <View style={styles.boxComponents}>
             <CarteiraSaldos/>
             <View>
                 <ButtonAdicionarDinheiro/>
