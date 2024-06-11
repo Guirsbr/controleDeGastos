@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native"
 
 const styles = StyleSheet.create({
-    boxFunctionalities: {
+    boxComponents: {
         width:"100%",
         height:"100%",
         bottom:0,

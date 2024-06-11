@@ -1,21 +1,33 @@
-import { StyleSheet, Text, View } from 'react-native';
-import Title from './src/components/Title'
-import Functionalities from './src/components/Functionalities';
+import { useState } from 'react';
+import { StyleSheet, View, Text } from 'react-native';
+
+import HomeScreen from './src/view/HomeScreen';
 
 export default function App() {
+
+  const [changeScreen, setChangeScreen] = useState("HomeScreen")
+
+  const CurrentScreen = () => {
+    if (changeScreen === "HomeScreen") {
+      return (
+        <View>
+          <HomeScreen/>
+        </View>
+      );
+    } else {
+      return (
+        <View>
+          <Text>Teste</Text>
+        </View>
+      );
+    }
+  }
+
   return (
-    <View style={styles.container}>
-      <Title/>
-      <Text></Text>
-      <Functionalities/>
+    <View>
+      <CurrentScreen/>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#524938',
-    paddingTop:60,
-  },
-});
+
