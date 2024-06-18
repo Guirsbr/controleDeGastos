@@ -6,7 +6,7 @@ export default function ButtonRelatorios(){
         <View>
             <TouchableOpacity style={styles.button}>
                 <Image 
-                source={ require('../img/relatorios.png')}
+                source={ require('../../../../img/relatorios.png')}
                 style={styles.imageButton}/>
                 <Text style={styles.textButton}>Extrato</Text>
             </TouchableOpacity>

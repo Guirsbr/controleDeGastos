@@ -6,7 +6,7 @@ export default function ButtonAdicionarDinheiro(){
         <View>
             <TouchableOpacity style={styles.button}>
                 <Image 
-                source={ require('../img/adicionarDinheiro.png')}
+                source={ require('../../../../img/adicionarDinheiro.png')}
                 style={styles.imageButton}/>
                 <Text style={styles.textButton}>Adicionar Dinheiro</Text>
             </TouchableOpacity>

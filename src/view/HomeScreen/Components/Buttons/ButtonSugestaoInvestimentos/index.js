@@ -6,7 +6,7 @@ export default function ButtonSugestaoInvestimentos(){
         <View>
             <TouchableOpacity style={styles.button}>
                 <Image 
-                source={ require('../img/sugestaoInvestimentos.png')}
+                source={ require('../../../../img/sugestaoInvestimentos.png')}
                 style={styles.imageButton}/>
                 <Text style={styles.textButton}>Investimentos</Text>
             </TouchableOpacity>
