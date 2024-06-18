@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native"
 
 const styles = StyleSheet.create({
-    button: {
+    boxTitle: {
         flexDirection:"row",
         alignItems:"center",
         justifyContent:"center",
@@ -11,19 +11,22 @@ const styles = StyleSheet.create({
         paddingBottom:15,
         paddingLeft:20,
         paddingRight:20,
-        marginTop:40,
+        borderWidth:1,
+        borderColor:"#000000",
         width:325,
+        transform: [
+            { translateY: -50 }, ], 
     },
-    imageButton: {
+    imageTitle: {
         objectFit:"scale-down",
         marginRight:"auto",
         width:'25%',
     },
-    textButton: {
+    textTitle: {
         fontWeight:"bold",
         fontSize:20,
         color:"#A78139",
-        marginRight:"auto"
+        marginRight:"auto",
     },
 });
 

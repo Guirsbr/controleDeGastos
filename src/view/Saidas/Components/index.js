@@ -3,17 +3,17 @@ import { Pressable, Keyboard, View } from 'react-native';
 import styles from './style';
 import Title from './Tittle'
 import CarteiraSaldos from './CarteiraSaldos';
-import AdicionarValor from './AdicionarValor';
+import AdicionarSaida from './AdicionarSaida';
 import Historico from './Historico';
 import VoltarMenu from './VoltarMenu';
 
-export default function AdicionarDinheiro(){
+export default function Saidas(){
     return(
         <View style={styles.container}>
             <Pressable onPress={Keyboard.dismiss} style={styles.boxComponents}>
                 <Title/>
                 <CarteiraSaldos/>
-                <AdicionarValor/>
+                <AdicionarSaida/>
                 <Historico/>
                 <VoltarMenu/>
             </Pressable>

@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 
-import HomeScreen from './src/view/HomeScreen';
-import AdicionarDinheiro from './src/view/AdicionarDinheiro';
+import HomeScreen from './src/view/HomeScreen/Components';
+import AdicionarDinheiro from './src/view/AdicionarDinheiro/Components';
+import Saidas from './src/view/Saidas/Components';
 
 export default function App() {
 
@@ -19,6 +20,12 @@ export default function App() {
       return (
         <View>
           <AdicionarDinheiro/>
+        </View>
+      );
+    } else if (changeScreen === "Saidas") {
+      return (
+        <View>
+          <Saidas/>
         </View>
       );
     } else {

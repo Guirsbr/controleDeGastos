@@ -1,6 +1,10 @@
 import { StyleSheet } from "react-native"
 
 const styles = StyleSheet.create({
+    container: {
+        backgroundColor: '#524938',
+        paddingTop:60,
+      },
     boxComponents: {
         width:"100%",
         height:"100%",
