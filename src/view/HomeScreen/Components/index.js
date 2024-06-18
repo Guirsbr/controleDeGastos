@@ -5,7 +5,7 @@ import Title from './Title'
 import CarteiraSaldos from './CarteiraSaldos';
 import ButtonAdicionarDinheiro from './Buttons/ButtonAdicionarDinheiro';
 import ButtonSaidas from './Buttons/ButtonSaidas';
-import ButtonRelatorios from './Buttons/ButtonsRelatorios';
+import ButtonExtrato from './Buttons/ButtonsExtrato';
 import ButtonSugestaoInvestimentos from './Buttons/ButtonSugestaoInvestimentos';
 
 export default function HomeScreen(){
@@ -14,12 +14,10 @@ export default function HomeScreen(){
             <Title/>
             <View style={styles.boxComponents}>
                 <CarteiraSaldos/>
-                
-                    <ButtonAdicionarDinheiro/>
-                    <ButtonSaidas/>
-                    <ButtonRelatorios/>
-                    <ButtonSugestaoInvestimentos/>
-                
+                <ButtonAdicionarDinheiro/>
+                <ButtonSaidas/>
+                <ButtonExtrato/>
+                <ButtonSugestaoInvestimentos/>
             </View>
         </View>
     );

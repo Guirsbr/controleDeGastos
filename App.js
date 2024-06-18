@@ -4,10 +4,11 @@ import { StyleSheet, View, Text } from 'react-native';
 import HomeScreen from './src/view/HomeScreen/Components';
 import AdicionarDinheiro from './src/view/AdicionarDinheiro/Components';
 import Saidas from './src/view/Saidas/Components';
+import Extrato from './src/view/Extrato/Components';
 
 export default function App() {
 
-  const [changeScreen, setChangeScreen] = useState("AdicionarDinheiro")
+  const [changeScreen, setChangeScreen] = useState("HomeScreen")
 
   const CurrentScreen = () => {
     if (changeScreen === "HomeScreen") {
@@ -26,6 +27,12 @@ export default function App() {
       return (
         <View>
           <Saidas/>
+        </View>
+      );
+    } else if (changeScreen === "Extrato") {
+      return (
+        <View>
+          <Extrato/>
         </View>
       );
     } else {
