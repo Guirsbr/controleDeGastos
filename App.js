@@ -14,7 +14,7 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='HomeScreen'>
+      <Stack.Navigator>
         <Stack.Screen
           name="HomeScreen"
           component={HomeScreen}
@@ -46,54 +46,6 @@ export default function App() {
       </Stack.Navigator>
     </NavigationContainer>
   )
-
-
-
-
-
-  const [changeScreen, setChangeScreen] = useState("HomeScreen")
-
-
-
-  const CurrentScreen = () => {
-    if (changeScreen === "HomeScreen") {
-      return (
-        <View>
-          <HomeScreen/>
-        </View>
-      );
-    } else if (changeScreen === "AdicionarDinheiro") {
-      return (
-        <View>
-          <AdicionarDinheiro/>
-        </View>
-      );
-    } else if (changeScreen === "Saidas") {
-      return (
-        <View>
-          <Saidas/>
-        </View>
-      );
-    } else if (changeScreen === "Extrato") {
-      return (
-        <View>
-          <Extrato/>
-        </View>
-      );
-    } else {
-      return (
-        <View>
-          <Text>Teste</Text>
-        </View>
-      );
-    }
-  }
-
-  return (
-    <View>
-      <CurrentScreen/>
-    </View>
-  );
 }
 
 

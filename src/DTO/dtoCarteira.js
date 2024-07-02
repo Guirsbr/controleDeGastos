@@ -39,3 +39,7 @@ class WalletDTO {
         this.balance = balance;
     }
 }
+
+global.carteira = 0
+global.listaValoresAdicionadosGlobal = []
+global.listaValoresRetiradosGlobal = []
