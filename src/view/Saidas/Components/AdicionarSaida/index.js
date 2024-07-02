@@ -14,7 +14,7 @@ export default function AdicionarSaida(){
     function removerValorCarteira(){
         let valorSuporte = parseFloat(carteira) - parseFloat(valorParaRetirar)
         setListaValoresRetirados([{id: new Date().getTime(), dinheiroRetirado: parseFloat(valorParaRetirar)}, ...listaValoresRetirados])
-        listaValoresRetiradosGlobal = listaValoresRetirados
+        listaValoresRetiradosGlobal = [{id: new Date().getTime(), dinheiroRetirado: parseFloat(valorParaRetirar)}, ...listaValoresRetirados]
         carteira = valorSuporte
         setValorParaRetirar(0)
     }
