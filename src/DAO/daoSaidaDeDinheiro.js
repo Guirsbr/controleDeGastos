@@ -1,14 +1,14 @@
-
+// src/DAO/daoSaidaDeDinheiro.js
 import BalanceDAO from './BalanceDAO.js';
 
-class SaidaDeDinheiro {
-    constructor(balanceDAO) {
-        this.balanceDAO = balanceDAO;
+class daoSaidaDeDinheiro {
+    constructor() {
+        this.balanceDAO = new BalanceDAO();
     }
 
-    removerDinheiro(valor) {
-        this.balanceDAO.removerDinheiro(valor);
+    sairDinheiro(valor) {
+        this.balanceDAO.sairDinheiro(valor);
     }
 }
 
-export default SaidaDeDinheiro;
+export default new daoSaidaDeDinheiro();
